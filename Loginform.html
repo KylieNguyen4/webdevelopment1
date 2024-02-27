@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+background-color:#CCFFEC;
+align-items:center;
+display:flex;
+}
+.form-group{
+margin-bottom: 15px;
+ margin-right: 15px;
+}
+label{
+background-color:yellow;
+}
+h2{
+color:purple;
+}
+button{
+color:red;
+background-color:blue;
+}
+button:hover{
+backgroud-color:hotpink;
+}
+input[type="email"],
+input[type="password"],
+input[type="checkbox"] {
+background-color:white;
+width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+</style>
+</head>
+<body>
+<h2>Login</h2>
+<form>
+<div class="form-group">
+<label for="email">Email</label>
+<input type="email" id="email">
+</div>
+<div class="form-group">
+<label for="password">Password</label>
+<input type="password" id="Password">
+</div>
+<div class="form-group">
+<input type="checkbox" id="Remember">
+<label for="Remember">Remeber Me</label>
+</div>
+<button>Login</button>
+</form>
+</body>
+</html>
