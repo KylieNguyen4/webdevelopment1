@@ -1,0 +1,70 @@
+<DOCTYPE>
+<html>
+<head>
+<style>
+h1{
+text-align:center;
+}
+form{
+ background: blue;
+  width: 100%;
+   height: 200px;
+  text-align: center;
+    -webkit-animation: move 8s infinite; 
+                animation: move 8s infinite;
+ }
+ @-webkit-keyframes move {
+  50% {background-color: yellow} /* Change the background color of the element to #9933CC at 50% of the animation duration */
+     }
+     @keyframes move {
+              50% {background-color: purple} /* Change the background color of the element to #FF33CC at 50% of the animation duration */
+          }
+}
+
+</style>
+</head>
+<body>
+<h1>Travel reservation form</h1>
+<form>
+<label>Full name*:</label>
+<input id="name" type="text" placeholder="Firstname" required>
+
+<br>
+
+
+<label>Email address*:</label>
+<input id="Email" type="Email" required>
+
+<br>
+
+<label>Select tour Package*:</label>
+<select id="package" name="Package"
+
+<br>
+
+<label>Arrial date*:</label>
+<input id="date" type="date" required>
+
+<br>
+
+<label>Number of person*:</label>
+<input id="person" type="numbers">
+
+<br>
+
+<label>What would you want to avail?*</label>
+<input id="avail" type="checkbox">
+<label>
+<label>Discount Coupon code:</label>
+
+<input  id="discount" type="Discount">
+
+<br>
+
+<label>Terms of conditions</label>
+<label for="checkbox">Checkbox</label>
+           <input radio="checkbox" id="checkbox" />
+</form>
+<button>Complete reservation</button>
+</body>
+</html> 
