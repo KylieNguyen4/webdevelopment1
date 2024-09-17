@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1{
+background-color:#a2d2ff;
+text-align:center;
+}
+.container{
+background-color:#f2cc8f;
+color:#212529;
+text-align:center;
+}
+.sunny{
+background-image: url('https://wikiclipart.com/wp-content/uploads/2017/02/Sunny-clipart-3.png')
+}
+.cloudy{
+background-image: url('https://cdn-icons-png.flaticon.com/512/7084/7084486.png')
+}
+.rainy{
+background-image: url('https://www.creativefabrica.com/wp-content/uploads/2023/11/17/Rainy-clipart-Rain-cloud-weather-icon-Graphics-84326141-1-1-580x387.jpg')
+}
+.snowy{
+background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Fsnow_6635320&psig=AOvVaw1zUxX-9ZUVnVz8OayIoIo1&ust=1726618016497000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNjDm8LXyIgDFQAAAAAdAAAAABAJ')
+}
+</style>
+</head>
+<body>
+<h1>Choose the Weather!</h1>
+<div class="container">
+<select id="weatherselect" onchange="changeBackground()">
+<option value="sunny">Sunny</option>
+<option value="rainy">Rainy</option>
+<option value="snowy">Snowy</option>
+<option value="cloudy">Cloudy</option>
+</select>
+</div>
+<script>
+function changeBackground(){
+var selectedWeather = document.getElementById('weatherSelect').value;
+document.body.className = selectedWeather;
+}
+</script>
+</body>
+</html>
