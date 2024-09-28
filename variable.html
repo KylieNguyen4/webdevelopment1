@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: aquamarine;
+                font-size: medium;
+                font-family:fantasy;
+            }
+            #display{
+               
+                padding: 10px;
+                width: 300px;
+               
+                background-color: brown;
+                color: white;
+                height: 30%;
+                border: 2px solid black;
+                border-radius: 30px;
+            }
+            .container{
+                text-align: center;
+            }
+           
+        </style>
+    </head>
+	<body>
+        <div class="container">
+        <p id="display">Hi, I am Explanation!</p>
+    </div>
+
+        <script>
+            const Name = 'Kylie';
+            let age = 7;
+            let subject = 'Web Development';
+
+            let outputScreenMessage1 = ' I am ' + Name  + ' I love ' + subject;
+            let outputScreenMessage2 = ' I am ' + age + 'old.';
+            document.getElementById('display').textContent = outputScreenMessage1 + outputScreenMessage2;
+           
+        </script>
+    </body>
+</html>
