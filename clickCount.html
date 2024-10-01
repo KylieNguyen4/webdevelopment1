@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: aquamarine;
+                font-family: 'Arial Narrow';
+                text-align: center;
+            }
+            #container{
+                background-color: white;
+                max-width: 300px;
+                height: 200px;
+                border-radius: 10px;
+                box-shadow: 0px 4px 8px rgb(0, 0, 0, 0.1);
+                margin: 20px;
+                padding: 20px;
+               
+            }
+            button{
+                background-color: rgb(35, 220, 35);
+                color: white;
+                font-family: sans-serif;
+                width: 250px;
+                padding: 10px;
+                border: none;
+
+            }
+            button:hover{
+                background-color: green;
+                cursor: pointer;
+            }
+
+        </style>
+    </head>
+	<body>
+        <div id="container">
+            <h1>Click the Button Game</h1>
+            <p> How many times can you click the button? </p>
+            <button id="clickButton" onclick="incrementCounter()">Click Me!</button>
+            <p>Button clicked <span id="clickCount" >0</span> times.</p>
+        </div>
+
+        <script>
+            let clickCount = 0;
+
+            function incrementCounter(){
+                clickCount++;
+                document.getElementById('clickCount').innerHTML = clickCount;
+            }
+        </script>
+    </body>
+</html>
