@@ -1,0 +1,32 @@
+<!DOCTYPE>
+<html>
+<head>
+<style>
+
+</style>
+</head>
+<body>
+<div class="container">
+<h1>What's your favorite ice cream?</h1>
+<p>Pick your favotrite flavor</p>
+<select id="icecream-select">
+<option value="">Select an option</option>
+<option value="Chocolate">Chcolate</option>
+<option value="Vanilla">Vanilla</option>
+<option value="strawberry">strawberry</option>
+<option value="Mint">Mint</option>
+</select>
+<button id="choose-button">Choose</button>
+
+<p id="result-message"></p>
+</div>
+<script>
+        document.getElementById('choose-button').onclick = function() {
+            let flavor = document.getElementById('icecream-select').value;
+            document.getElementById('result-message').textContent = flavor ? 
+            `You picked ${flavor} ice cream! Yum!` :
+             'Please choose your favorite ice cream!';
+        };
+    </script>
+</body>
+</html>
