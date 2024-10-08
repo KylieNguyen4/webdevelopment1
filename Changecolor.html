@@ -1,0 +1,26 @@
+<!DOCTYPE>
+<html>
+<head>
+<style>
+#colorbox{
+width:200px;
+height:200px;
+margin:0 auto;
+background-color:lightblue
+}
+</style>
+</head>
+<body>
+       
+            <h1>Random Color box</h1>
+			<div id="colorbox"></div>
+            <button id="color" onclick="changeColor()">Change color</button>
+<script>
+        function changeColor() {
+            // Create a random color
+            let randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+            document.getElementById('colorbox').style.backgroundColor = randomColor;
+        }
+    </script>
+</body>
+</html>
