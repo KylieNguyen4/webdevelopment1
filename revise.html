@@ -1,0 +1,55 @@
+<!DOCTYPE>
+<html>
+<head>
+<style>
+body{
+background-color:burlywood;
+}
+h1{
+text-align:center;
+background-color:antiquewhite;
+border: 2px solid hotpink;
+border-radius:10px;
+padding:10px;
+margin:10px;
+}
+#paragraphID{
+text-align:center;
+background-color:antiquewhite;
+border: 2px solid hotpink;
+border-radius:10px;
+padding:10px;
+margin:10px;
+}
+button{
+background-color:aquamarine;
+color:white;
+padding:7px;
+border-style:none;
+border-radius:10px;
+}
+#boxID{
+align-items:center;
+width:200px;
+height:200px;
+background-color:blanchedalmond;
+padding-left:100px;
+}
+</style>
+</head>
+<body>
+<h1>Basic HTML/CSS and JavaScript Class!!</h1>
+<p id="paragraph"></p>
+<div id="boxID">
+<p>I am a BOX!</p>
+</div>
+<button id="buttonID" onclick="displayDetail"()>Click Me!</button>
+
+<script>
+fuction displayDetail(){
+let name = 'Kylie';
+document.getElementById('paragraph').innerHTML = name;
+}
+</script>
+</body>
+</html>
