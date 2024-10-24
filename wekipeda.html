@@ -16,14 +16,60 @@ margin-right:15px;
 header h1{
 font-size:24px;
 }
+footer{
+background-color: #336699;
+color:white;
+text-align:center;
+padding:5px;
+bottom:0;
+position: fixed;
+width:100%;
+}
+.sidebar {
+            width: 25%;
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-right: 2px solid #ddd;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul li a {
+            color: #336699;
+            text-decoration: none;
+        }
+
+        .sidebar ul li a:hover {
+            text-decoration: underline;
+        }
 </style>
 </head>
 <body>
 <header>
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia-logo.png">
 </header>
+
 <div class="content">
-            <div class="article">
+<nav class="sidebar">
+<ul>
+<li><a href='#'>Main Page</a></li>
+<li><a href='#'>History</a></li>
+<li><a href='#'>Science</a></li>
+<li><a href='#'>Technology</a></li>
+<li><a href='#'>Mathmatics</a></li>
+<li><a href='#'>Literature</a></li>
+<li><a href='#'>Art</a></li>
+<li><a href='#'>Random article</a></li>
+</ul>
+</nav>
+            <div class="article"> 
                 <h1>Welcome to the Simple Wikipedia Clone</h1>
 
                 <p>This is a simple clone of Wikipedia built using only HTML and CSS. It includes a basic layout with a header, sidebar for navigation, and a main content area for articles.</p>
@@ -34,4 +80,8 @@ font-size:24px;
             </div>
         </div>
 </body>
+<footer>
+<p>© 2024 Simple Wikipedia Clone | Kylie</p>
+
+</footer>
 </html>
