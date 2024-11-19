@@ -1,0 +1,35 @@
+<!DOCTYPE>
+<html>
+<head>
+<style>
+bodym html{
+margin:0;
+padding:0 ;
+height:100%;
+overflow: hidden; /* Prevents scrolling*/
+}
+.video-background{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+overflow: hidden;/*ENsures video doesn't overflow*/
+z-index:-1; /*places video behide content*/
+}
+.video-background video {
+    min-width: 100%; 
+    min-height: 100%; 
+    object-fit: cover; 
+}
+</style>
+</head>
+<body>
+<h1>Video Embedded in HTML Doc</h1>
+<div class="video-background">
+<video autoplay loop muted playsinline>
+<source src="https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/BYhbSjKDtkvty6l0n/videoblocks-529_rcaomtkp_r-hxkena3__1f4f997b463d477273ec8865130aa7c8__P360.mp4">
+</video>
+<div>
+</body>
+</html>
