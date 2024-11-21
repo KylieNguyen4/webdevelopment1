@@ -1,0 +1,54 @@
+<!DOCTYPE>
+<html>
+<head>
+<style>
+body html{
+margin:0;
+padding:0 ;
+height:100%;
+overflow: hidden; /* Prevents scrolling*/
+}
+.video-background{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+overflow: hidden;/*ENsures video doesn't overflow*/
+z-index:-1; /*places video behide content*/
+}
+.video-background video {
+    min-width: 100%; 
+    min-height: 100%; 
+    object-fit: cover; 
+}
+.poem{
+  color:white;
+   background-color:brown;
+   text-align:center;
+   padding:10px;
+   font-family:verdana;
+   font-size:14px;
+}
+</style>
+</head>
+<body>
+<h1>Video Book</h1>
+<div class="poem">
+     <h1>Poem<h1>
+     <h3>Leaves compared with flowers</h3>
+     <p>A tree's leaves may be ever so good,<br>
+      So may its bar, so may its wood;<br>
+      But unless you put the right thing to its root<br>
+      It never will show much flower or fruit.<br>
+     </p>
+  </div>
+  <div class="video-background">
+    <video autoplay loop muted playsinline>
+       <source src="https://video-previews.elements.envatousercontent.com/files/4bb27aca-7d4b-43c9-89cb-705d9f02bc1a/video_preview_h264.mp4"> 
+    </video>
+   
+</div>
+
+</body>
+</html>
