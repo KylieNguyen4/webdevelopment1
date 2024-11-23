@@ -1,0 +1,48 @@
+<!DOCTYPE>
+<html>
+<head>
+<style>
+body html{
+margin:0;
+padding:0 ;
+height:100%;
+color:baby-blue;
+align-text:center;
+overflow: hidden; /* Prevents scrolling*/
+}
+.video-background{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+overflow: hidden;/*ENsures video doesn't overflow*/
+z-index:-1; /*places video behide content*/
+}
+.video-background video {
+    min-width: 100%; 
+    min-height: 100%; 
+    object-fit: cover; 
+}
+h1,p{
+text-align:center;
+color:blue;
+}
+</style>
+</head>
+<body>
+<h1>Happy Birthday</h1>
+<p>From</p>
+<p>Kylie</p>
+<h3>MENU</h3>
+<p>Chicken Nuggets</p>
+<p>Burgers</p>
+<p>Noodles</p>
+<p>Soft drinks/Ice cream</p>
+ <div class="video-background">
+<video autoplay loop muted playsinline>
+<source src="https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/H5wU7syXnlgq4pzco/videoblocks-2022_06_09_balloonspass_rp0asi2q2__149a498a7ab0d33c575902bf9be706b2__P360.mp4">
+</video>
+</div>
+</body>
+</html>
