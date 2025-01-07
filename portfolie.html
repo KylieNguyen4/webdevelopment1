@@ -5,7 +5,8 @@
 body{
 padding:0px;
 margin:0px;
-color:black;
+color:#8c9570;
+background-color:white;
 }
 header{
 display:flex;
@@ -22,25 +23,61 @@ padding:20px;
 margin:20px;
 }
 .article h1{
-color:green;
+color:#8c9570;
+text-align:center;
 }
 .article img{
-margin-left:40%;
+margin-left:47%;
+}
+.container{
+display:grid;
+grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+gap:10px;
+width:100%;
+max-width:700%;
+background-color:#faedcd;
+border:2px colid #acb68a;
+padding:10px;
+margin:auto;
+}
+.grid-item{
+background:white;
+color:#acb68a;
+padding:20px;
+text-align:center;
+border-radius:4px;
+}
+p{
+text-align:center;
+}
+header{
+font-size:4rem;
+font-weight:bold;
+animation: glow 2s infinite alternate;
+}
+@keyframes glow{
+0%{ color:#ff6b6b;
+text-shadow: 0 0 10 px #ff6b6b , 0 0 20px #ff6b6b, 0 0 30 px #ff6b6b;
+}
+100%{
+color:#4db8ff;
+text-shadow: 0 0 10 px #4db8ff, 0 0 20px #4db8ff, 0 0 30px #4db8ff;
+}
 }
 </style>
 </head>
 <body>
 <header>
-<img src="https://www.scottleroymarketing.com/wp-content/uploads/2016/06/Hiring-a-good-logo-designing-company-to-create-your-logo-1.jpeg">
-<h1>My portfole</h1>
+<img src="https://ih1.redbubble.net/image.2698017752.0630/flat,750x,075,f-pad,750x1000,f8f8f8.u2.jpg">
+<h1>My portfolie</h1>
 </header>
 <div class="article">
 <h1>My Introudction</h1>
-<p>I im a female, I love playing games, I have friends</p>
-<img src="https://s.turbifycdn.com/aah/fridgedoor/baby-girl-smiley-face-magnet-19.gif">
+<p>I im a female, I love drawings, I have friends. <3</p>
+<img src="https://e1.pxfuel.com/desktop-wallpaper/52/318/desktop-wallpaper-kawaii-cute-anime-person-human-worship-prayer-transparent-png-pngset.jpg" height="100px">
 </div>
 <div="article">
-<h2>Projects</h2>
+<h2>|Projects|</h2>
 <ul>
 <li>
 food ordering website
@@ -50,15 +87,15 @@ food ordering website
 <li>weather website</li>
 </ul>
 <div class="article">
-<h1>Food ordering website</h1>
-<p>IN this website, I created a food Ordering menu, where food names and princes are displayed. I also used the image background</p>
+<h1>|Food ordering website|</h1>
+<p>In this website, I created a food Ordering menu, where food names and princes are displayed. I also used the image background</p>
 </div>
 <div class="article">
-<h1>Movie website</h1>
+<h1>|Movie website|</h1>
 <p>I created the Movie website where I displayed , favourite movie website.</p>
 </div>
 <div class="article">
-<h1>Poem</h1>
+<h1>|Poem|</h1>
 <p>Two roads diverged in a yellow wood,<br>
 And sorry I could not travel both<br>
 And be one traveler, long I stood<br>
@@ -66,8 +103,32 @@ And looked down one as far as I could<br>
 To where it bent in the undergrowth;</p>
 </div>
 <div class="article">
-<h1>Weather</h1>
+<h1>|Weather|</h1>
 <p>I made a weather website! And i said the weather has sunny</p> 
+</div>
+<div class="article">
+<h1>|Projects:Websites|</h1>
+</div>
+<div class="container">
+<div class="grid-item" >Food Ordering Website</div>
+<div class="grid-item">Movie website</div>
+<div class="grid-item">Cartoon website</div>
+<div class="grid-item">Weather Change Update</div>
+</div>
+<div class="container">
+<div class="grid-item">Movtivational Quotes</div>
+<div class="grid-item">Book Website</div>
+<div class="grid-item">Nature Website</div>
+<div class="grid-item">My Portfilo Website</div>
+</div>
+<div class="article">
+<h1>|Skills|</h1>
+</div>
+<div class="container">
+<div class="grid-item">
+<img src="https://w7.pngwing.com/pngs/363/9/png-transparent-html-computer-icons-html-css-angle-text-logo-thumbnail.png" width="30px" height="30px"> HTML</div>
+<div class="grid-item">
+<img src="https://static.vecteezy.com/system/resources/thumbnails/022/597/183/small_2x/3d-file-css-icon-illustration-png.png" width="30px" height="30px"> CSS</div>
 </div>
 </body>
 </html>
