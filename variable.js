@@ -24,3 +24,21 @@ console.log("sum,: , number1 + number2");
 console.log("Diffrence: ", number1 - number2);
 console.log("Product: ", number1 * number2);
 console.log("Divide: ", number1 / number2);
+//TASK:About my self
+
+
+console.log("FAv color:")
+console.log("My fav color is lavender");
+console.log("age:")
+console.log("I am 10 years old!");
+console.log("Fan of pizza?:")
+console.log("I like a specific kind of pizza.");
+
+console.log("I like drawing");
+console.log("My fav place is Vietnam");
+console.log("My personality is quiet sweet weird,");
+let number1=30;
+let number2=40;    
+let result;
+result = number1 + number2;
+console.log("Sum: "+result);
