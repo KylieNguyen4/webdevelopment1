@@ -24,6 +24,7 @@
           padding: 1.5rem;
           box-shadow: 0 0 15px rgba(0,0,0,0.1);
           transition: transform 0.2s;
+          text-align: center;
          }
          .funfact:hover {
       transform: scale(1.01);
@@ -39,7 +40,44 @@
       height: 300px;
       margin: 10px;
       border-radius: 12px;
-      box-shadow: 2px 2px 10px #bbb;
+      background-color: #fff3e0;
+          padding: 1.5rem;
+          box-shadow: 0 0 15px rgba(0,0,0,0.1);
+          transition: transform 0.2s;
+          text-align: center;
+    }
+    .text{
+      background-color: #83c2e6;
+          border-radius: 15px;
+          margin:1rem;
+          padding: 1.5rem;
+          box-shadow: 0 0 15px rgba(0,0,0,0.1);
+          transition: transform 0.2s;
+          text-align: center;
+    }
+    .animated-text {
+  font-size: 1.8rem;
+  color: white;
+  animation: bounceGlow 1.5s infinite;
+}
+.date {
+  font-weight: bold;
+  color: #ff006e;
+}
+          /* Bouncing + glowing effect */
+@keyframes bounceGlow {
+  0% {
+    transform: scale(1);
+    text-shadow: 0 0 5px #fff176;
+  }
+  50% {
+    transform: scale(1.1);
+    text-shadow: 0 0 15px #ffea00, 0 0 25px #ffea00;
+  }
+  100% {
+    transform: scale(1);
+    text-shadow: 0 0 5px #fff176;
+  }
     }
         </style>
     </head>
@@ -47,8 +85,10 @@
       <header>
         <h1>Welcome to Kylie's Fun World! 🌈</h1>
         <p>I like playing games and draw 🎨 </p>
-        <p>Guess my what? My brithday is on AUGUST 5TH</p>
       </header>
+      <section class="text">
+        <h2 class="animated-text">🎉 Guess what? My birthday is on <span class="date">5 August</span>! 🎂🎈</h2>
+      </section>
       <section class="funfact">
       <h1>🧠Fun Facts About Me</h1>
       <ul><li>I have 67 WPM! Thats more than an adult could do!🧠</li>
@@ -56,7 +96,6 @@
       <li>I can draw anime!🎨</li>
       <p>Favorite Quote: “Our kingdom forever is Heaven” 🌈</p>  
     </section>
-<h1>Fun section video!</h1>
       <section class="funfact">
         <h1>🎥 My 2-Minute Video Intro!</h1>
         <p>Watch me talk about my favorite things!</p>
@@ -75,6 +114,27 @@
       <img src="/Javascript/Capture5.JPG"/>
       <img src="/Javascript/CApture6.JPG"/>
       <img src="/Javascript/Capture7.JPG"/>
+    </section>
+    <section class="funfact">
+      <h1>My Upcoming Trip Plan</h1>
+      <p> I'm going on a trip with my family from June 10 - June 15! Here's the plan:</p>
+      <ol>
+      <li><b>Day 1:</b> Go to the mall </li>
+      <li><b>Day 2:</b> Go buy some food</li>
+      <li><b>Day 3:</b> Go to a birthday party</li>
+      <li><b>Day 4:</b>Go to the beach</li>
+      <li><b>Day 5:</b>Relax at home</li>
+      </ol>
+    </section>
+    <section>
+      <h1>🚀 My Projects</h1>
+      <ul>
+        <li>We created websites</li>
+      </ul>
+    </section>
+    <section class="funfact">
+      <h1>Game 1# Guess the number!</h1>
+      <p>Guess what number im thinking (between 1-10)</p>
     </section>
     </body>
   </html>
