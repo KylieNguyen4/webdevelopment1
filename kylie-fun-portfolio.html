@@ -111,6 +111,7 @@
       border-radius: 8px;
       cursor: pointer;
       margin-top: 1rem;
+      
     }
     input {
       padding: 0.5rem;
@@ -181,11 +182,22 @@
         <h1>📬 Contact Me (Just for Fun!)</h1>
         <br><input type="text" placeholder="Your Name" id="name">
         <br><input type="text" placeholder="Your message" id="text"> <br>
-        <button>Send message</button>
+        <button onclick="fakeSend()">Send message</button>
     </section>
     <footer>
       <h1>Thanks for visiting Kylie's Fun World! 💫 Come back for new games & drawings!</h1>
-      
     </footer>
+    <script>
+
+      function fakeSend(){
+        const name = document.getElementById("name").value;
+        const msg = document.getElementById("message").value;
+        if (name && msg) {
+          alert(`Thanks ${name}! Your message is flying to Kylie now! 🚀`);
+        } else{
+          alert("Please fill out both boxes!");
+        }
+      }
+    </script>
     </body>
   </html>
