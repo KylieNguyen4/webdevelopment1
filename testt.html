@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <section>
+    <h1>Contact me</h1>
+    <br><input type="text" placeholder="Your Name"id="name">
+    <br><input type="text" placeholder="Your message"id="message"><br>
+    <button onclick="fakeSend()">Send message</button>
+</section>
+<script>
+
+function fakeSend(){
+    const name=document.getElementById("name").value;
+    const msg=document.getElementById("message").value;
+    if(name&&msg){
+        alert(`Thank ${name} for messaging!`)
+    }else{
+        alert("Please fill out both boxes");
+    }
+    }
+</script>
+</body>
+</html>
