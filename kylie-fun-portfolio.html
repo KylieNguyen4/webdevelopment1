@@ -177,11 +177,14 @@
     <section class="funfact">
       <h1>Game 1# Guess the number!</h1>
       <p>Guess what number im thinking (between 1-10)</p>
+      <br><input type="number" placeholder="Enter Your guess" id="guessInput">
+      <button onclick="checkGuess">Guess</button>
+      <p id="gameResult"></p>
     </section>
     <section class="funfact">
         <h1>📬 Contact Me (Just for Fun!)</h1>
         <br><input type="text" placeholder="Your Name" id="name">
-        <br><input type="text" placeholder="Your message" id="text"> <br>
+        <br><input type="text" placeholder="Your message" id="message"> <br>
         <button onclick="fakeSend()">Send message</button>
     </section>
     <footer>
@@ -189,6 +192,16 @@
     </footer>
     <script>
 
+      let secretNumber = Math.floor(Math.random() * 10) + 1;
+      function checkGuess() {
+        const guess = parseInt(document.getElementById("guessInput").value);
+        const result = document.getElementById("gameResult");
+        if (guess === secretNumber){
+          result.textContent = "You got it! You're amesome!"
+        } else{
+          result.textContent = "Oops! Try again";
+        }
+      }
       function fakeSend(){
         const name = document.getElementById("name").value;
         const msg = document.getElementById("message").value;
