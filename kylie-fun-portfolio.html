@@ -178,7 +178,7 @@
       <h1>Game 1# Guess the number!</h1>
       <p>Guess what number im thinking (between 1-10)</p>
       <br><input type="number" placeholder="Enter Your guess" id="guessInput">
-      <button onclick="checkGuess">Guess</button>
+      <button onclick="checkGuess()">Guess</button>
       <p id="gameResult"></p>
     </section>
     <section class="funfact">
@@ -187,9 +187,21 @@
         <br><input type="text" placeholder="Your message" id="message"> <br>
         <button onclick="fakeSend()">Send message</button>
     </section>
+    <section class="funfact">
+      <h1>🧠 Game #2: Rock, Paper, Scissors!</h1>
+      <div class="game-box">
+      <p>Pick one:</p>
+      <div class="rps-buttons">
+      <button onclick="playRPS('rock')">Rock</button>
+      <button onclick="playRPS('paper')">Paper</button>
+      <button onclick="playRPS('scissors')">Scissors</button>
+      </div>
+      <p id="rpsResult"></p>
+    </section>
     <footer>
       <h1>Thanks for visiting Kylie's Fun World! 💫 Come back for new games & drawings!</h1>
     </footer>
+
     <script>
 
       let secretNumber = Math.floor(Math.random() * 10) + 1;
@@ -211,6 +223,25 @@
           alert("Please fill out both boxes!");
         }
       }
-    </script>
-    </body>
-  </html>
+
+      function playRPS(playerChoice){
+        const choices = ["rock", "paper", "scissors"];
+        const computerChoice = choices[Math.floor(Math.random() * 3)];
+        let result = "";
+        if(playerChoice == computerChoice) {
+          result = "It's a tie!";
+        } else if(
+          (playerChoice === "rock" && computerChoice === "scissors") ||
+          (playerChoice === "paper" && computerChoice === "rock") ||
+          (playerChoice === "scissors" && computerChoice === "paper")
+        ) {
+          result = `You win ${playerChoice} beats ${computerChoice}`;
+        } else {
+         result = `you lose! ${computerChoice} beats ${playerChoice}`;
+        }
+
+       document.getElementById("rpsResult").textContent = result;
+         } 
+</script>
+</body>
+</html>
